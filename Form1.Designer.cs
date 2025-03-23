@@ -30,6 +30,8 @@
         {
             btnNew = new Button();
             button2 = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // btnNew
@@ -52,15 +54,26 @@
             button2.Text = "Edit Customer";
             button2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 39);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(776, 399);
+            dataGridView1.TabIndex = 2;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(btnNew);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -68,5 +81,6 @@
 
         private Button btnNew;
         private Button button2;
+        private DataGridView dataGridView1;
     }
 }
